@@ -5,9 +5,66 @@
 		<title>javascript</title>
 		<script>
 		
-		//comentario
+		//comentario JacaScript es un lenguaje no tipado
 		/* */
-		alert("Hola mundo");
+		//alert("Hola mundo");
+		//document.write("<h1>Hola mundo</h1>");
+		//document.write(10+5);
+		//document.write("Hola"+(10+5));
+		//document.write("Hola"+(10+5.8)+"<br/>");
+		
+		/*var nombre = "Christiane"; //variable local
+		var $ = "Christiane"; //variable local
+		//nombre = "Christiane"; //variable global
+		//var 9nombre = "Christiane"; // nombre de variable invalido
+		/*nombre = 15; 
+		var edad = 27;
+		var peso = 63;
+		document.write(nombre);*/
+		/*var nombre = prompt("Escribe tu nombre");
+		document.write(nombre);*/
+		
+		/*function calculaAreaRectangulo(base,altura){
+			
+			var area = base*altura;
+			return area;
+			
+		}*/
+		
+		var calculaAreaRectangulo = function (base,altura){//Funcion anonima
+			
+			var area = base*altura;
+			return area;
+			
+		};
+		
+		function calculaArea(miFuncion){
+			return miFuncion(10,5);
+		}
+		
+		var area = calculaArea(calculaAreaRectangulo);
+		
+		//var area = calculaAreaRectangulo(10,5);
+		//alert(area);
+		//document.write("El area es: "+area);
+		
+		var persona = new Object();
+		persona.nombre = "Christiane";
+		persona.edad = 27;
+		persona.hablar = function(){
+			alert("Hola");
+		};
+		
+		var persona2 = {
+			nombre:"Christiane",
+			edad:27,
+			hablar:function(mensaje){
+				alert(mensaje);
+			}
+		};
+		
+		document.write("Nombre: "+persona2.nombre);
+		persona2.hablar("Hola a todos");
 		
 		</script>
 

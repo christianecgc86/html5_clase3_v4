@@ -4,9 +4,25 @@
 		<meta charset="UTF-8" />
 		<title>javascript</title>
 
-		<script>		
-		   //su codigo aqui		    
-
+		<script>
+		
+			var n = prompt("Escribe tu nombre");
+			var d = prompt("Escribe tu domicilio");
+			var t = prompt("Escribe tu telefono");
+			
+			var persona = {
+				nombre : n,
+				domicilio : d,
+				telefono : t,
+				muestraDatos : function(){
+					document.write("Nombre: "+this.nombre+"<br/>");
+					document.write("Domicilio: "+this.domicilio+"<br/>");
+					document.write("Telefono: "+this.telefono+"<br/>");
+				}
+			};
+			
+			persona.muestraDatos();
+			
 		</script>
 
 	</head>
